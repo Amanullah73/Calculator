@@ -65,6 +65,5 @@ License
 
 This project is licensed under the MIT License.
 
-Author
-
-Amanullah(https://github.com/Amanullah73)
+## Author
+[Amanullah](https://github.com/amanullah76)
