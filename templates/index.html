@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="clear">C</button>
+                <button onclick="backspace()" class="backspace">⌫</button>
+                <button onclick="appendToDisplay('/')" class="op">/</button>
+                <button onclick="appendToDisplay('*')" class="op">*</button>
+
+                <button onclick="appendToDisplay('7')" class="num">7</button>
+                <button onclick="appendToDisplay('8')" class="num">8</button>
+                <button onclick="appendToDisplay('9')" class="num">9</button>
+                <button onclick="appendToDisplay('-')" class="op">-</button>
+
+                <button onclick="appendToDisplay('4')" class="num">4</button>
+                <button onclick="appendToDisplay('5')" class="num">5</button>
+                <button onclick="appendToDisplay('6')" class="num">6</button>
+                <button onclick="appendToDisplay('+')" class="op">+</button>
+
+                <button onclick="appendToDisplay('1')" class="num">1</button>
+                <button onclick="appendToDisplay('2')" class="num">2</button>
+                <button onclick="appendToDisplay('3')" class="num">3</button>
+                <button onclick="calculateResult()" class="equals">=</button>
+
+                <button onclick="appendToDisplay('0')" class="zero num">0</button>
+                <button onclick="appendToDisplay('.')" class="num">.</button>
+                <button onclick="turnOff()" class="off">OFF</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
